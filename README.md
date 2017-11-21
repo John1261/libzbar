@@ -1,0 +1,2 @@
+
+zbar lib for iOS
