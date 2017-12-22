@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5287552F1FECCE8A00AAB07F /* libZBarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5287552E1FECCE8A00AAB07F /* libZBarSDK.a */; };
 		52CA7DF11FC2E5C900B87EEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA7DF01FC2E5C900B87EEB /* AppDelegate.m */; };
 		52CA7DF41FC2E5C900B87EEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA7DF31FC2E5C900B87EEB /* ViewController.m */; };
 		52CA7DF71FC2E5C900B87EEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CA7DF51FC2E5C900B87EEB /* Main.storyboard */; };
 		52CA7DF91FC2E5C900B87EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CA7DF81FC2E5C900B87EEB /* Assets.xcassets */; };
 		52CA7DFC1FC2E5C900B87EEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CA7DFA1FC2E5C900B87EEB /* LaunchScreen.storyboard */; };
 		52CA7DFF1FC2E5C900B87EEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA7DFE1FC2E5C900B87EEB /* main.m */; };
-		52CA7E151FC2E65800B87EEB /* libZBarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CA7E141FC2E65800B87EEB /* libZBarSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5287552E1FECCE8A00AAB07F /* libZBarSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZBarSDK.a; sourceTree = "<group>"; };
 		52CA7DEC1FC2E5C900B87EEB /* libzbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libzbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CA7DEF1FC2E5C900B87EEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52CA7DF01FC2E5C900B87EEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		52CA7E111FC2E65800B87EEB /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
 		52CA7E121FC2E65800B87EEB /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
 		52CA7E131FC2E65800B87EEB /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
-		52CA7E141FC2E65800B87EEB /* libZBarSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libZBarSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52CA7E151FC2E65800B87EEB /* libZBarSDK.a in Frameworks */,
+				5287552F1FECCE8A00AAB07F /* libZBarSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,21 +92,21 @@
 		52CA7E051FC2E65800B87EEB /* ZBarSDK */ = {
 			isa = PBXGroup;
 			children = (
-				52CA7E061FC2E65800B87EEB /* ZBarCaptureReader.h */,
-				52CA7E071FC2E65800B87EEB /* ZBarImage.h */,
-				52CA7E081FC2E65800B87EEB /* debug.h */,
 				52CA7E091FC2E65800B87EEB /* config.h */,
+				52CA7E081FC2E65800B87EEB /* debug.h */,
+				5287552E1FECCE8A00AAB07F /* libZBarSDK.a */,
+				52CA7E0D1FC2E65800B87EEB /* zbar.h */,
+				52CA7E0F1FC2E65800B87EEB /* ZBarCameraSimulator.h */,
+				52CA7E061FC2E65800B87EEB /* ZBarCaptureReader.h */,
+				52CA7E0E1FC2E65800B87EEB /* ZBarCVImage.h */,
+				52CA7E0C1FC2E65800B87EEB /* ZBarHelpController.h */,
+				52CA7E071FC2E65800B87EEB /* ZBarImage.h */,
+				52CA7E111FC2E65800B87EEB /* ZBarImageScanner.h */,
 				52CA7E0A1FC2E65800B87EEB /* ZBarReaderController.h */,
 				52CA7E0B1FC2E65800B87EEB /* ZBarReaderView.h */,
-				52CA7E0C1FC2E65800B87EEB /* ZBarHelpController.h */,
-				52CA7E0D1FC2E65800B87EEB /* zbar.h */,
-				52CA7E0E1FC2E65800B87EEB /* ZBarCVImage.h */,
-				52CA7E0F1FC2E65800B87EEB /* ZBarCameraSimulator.h */,
-				52CA7E101FC2E65800B87EEB /* ZBarSymbol.h */,
-				52CA7E111FC2E65800B87EEB /* ZBarImageScanner.h */,
-				52CA7E121FC2E65800B87EEB /* ZBarSDK.h */,
 				52CA7E131FC2E65800B87EEB /* ZBarReaderViewController.h */,
-				52CA7E141FC2E65800B87EEB /* libZBarSDK.a */,
+				52CA7E121FC2E65800B87EEB /* ZBarSDK.h */,
+				52CA7E101FC2E65800B87EEB /* ZBarSymbol.h */,
 			);
 			path = ZBarSDK;
 			sourceTree = "<group>";
