@@ -46,6 +46,11 @@ typedef enum {
 
 } ZBarReaderControllerCameraMode;
 
+typedef enum {
+    ZBarCodeTypeBarCode = 0,
+    ZBarCodeTypeQRCode = 1,
+    ZBarCodeTypeAll
+} ZBarCodeType;
 
 @class ZBarReaderController, ZBarHelpController;
 
@@ -85,8 +90,14 @@ typedef enum {
     double dt_frame;
 
     ZBarSymbol *symbol;
+    ZBarCodeType codeType;
+    UIView *loadingView;
+    UIActivityIndicatorView *loadingInProgressView;
+    BOOL isScanningImage;
 }
-
+@property (nonatomic, assign) BOOL isScanningImage;
+@property (nonatomic, assign) BOOL hasOverlay;
+@property (nonatomic, assign) ZBarCodeType codeType;
 // access to configure image scanner
 @property (readonly, nonatomic) ZBarImageScanner *scanner;
 
