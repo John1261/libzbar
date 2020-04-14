@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "libzbar"
-s.version      = "1.3.4"
+s.version      = "1.3.4.1"
 s.summary      = "zbar lib for iOS"
 s.description  = <<-DESC
  zbar lib for iOS,scan barcode and qrcode
