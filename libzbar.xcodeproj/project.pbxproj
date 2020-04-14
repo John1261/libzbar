@@ -34,7 +34,6 @@
 		52CA7E091FC2E65800B87EEB /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		52CA7E0A1FC2E65800B87EEB /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
 		52CA7E0B1FC2E65800B87EEB /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
-		52CA7E0C1FC2E65800B87EEB /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
 		52CA7E0D1FC2E65800B87EEB /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
 		52CA7E0E1FC2E65800B87EEB /* ZBarCVImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCVImage.h; sourceTree = "<group>"; };
 		52CA7E0F1FC2E65800B87EEB /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
@@ -99,7 +98,6 @@
 				52CA7E0F1FC2E65800B87EEB /* ZBarCameraSimulator.h */,
 				52CA7E061FC2E65800B87EEB /* ZBarCaptureReader.h */,
 				52CA7E0E1FC2E65800B87EEB /* ZBarCVImage.h */,
-				52CA7E0C1FC2E65800B87EEB /* ZBarHelpController.h */,
 				52CA7E071FC2E65800B87EEB /* ZBarImage.h */,
 				52CA7E111FC2E65800B87EEB /* ZBarImageScanner.h */,
 				52CA7E0A1FC2E65800B87EEB /* ZBarReaderController.h */,

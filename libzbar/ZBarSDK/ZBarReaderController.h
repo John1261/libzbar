@@ -52,7 +52,7 @@ typedef enum {
     ZBarCodeTypeAll
 } ZBarCodeType;
 
-@class ZBarReaderController, ZBarHelpController;
+@class ZBarReaderController;
 
 @protocol ZBarReaderDelegate <UIImagePickerControllerDelegate>
 @optional
@@ -71,13 +71,11 @@ typedef enum {
       UIImagePickerControllerDelegate >
 {
     ZBarImageScanner *scanner;
-    ZBarHelpController *help;
     UIView *overlay, *boxView;
     CALayer *boxLayer;
 
     UIToolbar *toolbar;
     UIBarButtonItem *cancelBtn, *scanBtn, *space[3];
-    UIButton *infoBtn;
 
     id <ZBarReaderDelegate> readerDelegate;
     BOOL showsZBarControls, showsHelpOnFail, takesPicture, enableCache;
@@ -90,14 +88,17 @@ typedef enum {
     double dt_frame;
 
     ZBarSymbol *symbol;
+    
     ZBarCodeType codeType;
     UIView *loadingView;
     UIActivityIndicatorView *loadingInProgressView;
     BOOL isScanningImage;
 }
+
 @property (nonatomic, assign) BOOL isScanningImage;
 @property (nonatomic, assign) BOOL hasOverlay;
-@property (nonatomic, assign) ZBarCodeType codeType;
+@property (nonatomic) ZBarCodeType codeType;
+
 // access to configure image scanner
 @property (readonly, nonatomic) ZBarImageScanner *scanner;
 
